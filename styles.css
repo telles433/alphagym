@@ -766,4 +766,35 @@ body {
       justify-content: center;
     }
   }
+  .hero-video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(0.62) contrast(1.08);
+    pointer-events: none;   /* Prevent user from pausing video by tapping */
+  }
+  
+  @media (max-width: 700px) {
+    .hero-section {
+      min-height: 420px;
+      height: 65vh;
+    }
+    .hero-video {
+      width: 100vw;
+      height: 65vh;
+      min-height: 420px;
+      min-width: 100vw;
+      max-height: 80vh;
+      object-fit: cover;
+    }
+    .hero-content {
+      padding: 0 12px;
+    }
+  }
+  
   
